@@ -12,6 +12,13 @@ def weather(area):
     # return返回str类型的天气信息
     # author:达克dark
     # email:darkwangdy@protonmail.com
+
+    # 有些人喜欢调戏机器人天气预报功能，特意为他们准备的彩蛋
+    other_city=['韩国', '首尔', '纽约', '美国', '东京']
+    if area in other_city:
+        messg = '滚你大爷的'
+        return messg
+
     header = {
         #'Connection': 'keep-alive',
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36',
@@ -21,7 +28,7 @@ def weather(area):
     # 字典形式保存了城市和城市对应的code
     # 可以修改此字典来增加或删除城市
     area_dic = {
-	'百色市': '101301001',
+	    '百色市': '101301001',
         '吉林': '101060201',
         '舒兰': '101060202',
         '永吉': '101060203',

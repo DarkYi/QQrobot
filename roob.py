@@ -23,7 +23,7 @@ def handle_group_msg(event):
             usr_msg = usr_msg.strip(' ')
             usr_chooce = usr_msg[0]
             if usr_msg == '功能':
-                bot_msg = '1查询天气(输入1+你的城市)\n2美剧查询(输入2+你订阅的美剧，则返回该剧的最新更新)\n'
+                bot_msg = '1查询天气(输入1+你的城市)\n2美剧查询(输入2+你订阅的美剧，则返回该剧的最新更新)\n3全国疫情查询\n4最新电影查询'
                 bot.send(event, message=bot_msg)
             if usr_chooce in menu_dic:
                 usr_msg = usr_msg.strip(usr_chooce)
